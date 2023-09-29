@@ -20,6 +20,10 @@ conn = connect_to_db
 
 # Iterate over the JSON data and insert it into the database
 data.each do |entry|
+  # Convert empty strings to nil for integer columns
+  entry['end_year'] = entry['end_year'].empty? ? nil : entry['end_year'].to_i
+  entry['start_year'] = entry['start_year'].empty? ? nil : entry['start_year'].to_i
+
   sql = <<-SQL
     INSERT INTO data_entries (end_year, intensity, sector, topic, insight, url, region, start_year, impact, added, published, country, relevance, pestle, source, title, likelihood)
     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)

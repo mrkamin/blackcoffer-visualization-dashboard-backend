@@ -1,0 +1,2 @@
+class DataEntry < ApplicationRecord
+end
