@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  end_year: 1
+  intensity: 1
+  sector: MyString
+  topic: MyString
+  insight: MyString
+  url: MyString
+  region: MyString
+  start_year: 1
+  impact: MyString
+  added: 2023-09-29 16:18:07
+  published: 2023-09-29 16:18:07
+  country: MyString
+  relevance: 1
+  pestle: MyString
+  source: MyString
+  title: MyString
+  likelihood: 1
+
+two:
+  end_year: 1
+  intensity: 1
+  sector: MyString
+  topic: MyString
+  insight: MyString
+  url: MyString
+  region: MyString
+  start_year: 1
+  impact: MyString
+  added: 2023-09-29 16:18:07
+  published: 2023-09-29 16:18:07
+  country: MyString
+  relevance: 1
+  pestle: MyString
+  source: MyString
+  title: MyString
+  likelihood: 1
