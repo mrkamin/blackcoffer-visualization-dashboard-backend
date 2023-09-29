@@ -3,13 +3,12 @@ require 'pg'
 
 # Define a method to establish a database connection
 def connect_to_db
-  conn = PG.connect(
-    dbname: 'data_visualization_dashboard_development', 
-    user: 'postgres',        
-    password: 'password',    
-    host: 'localhost'             
+  PG.connect(
+    dbname: 'data_visualization_dashboard_development',
+    user: 'postgres',
+    password: 'password',
+    host: 'localhost'
   )
-  conn
 end
 
 # Read the JSON file
